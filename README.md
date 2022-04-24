@@ -16,6 +16,8 @@ JQUERY Documentation: https://api.jquery.com/
 
 ## Screenshots
 
+![Screenshot 2022-04-24 150553](https://user-images.githubusercontent.com/92322247/164994700-9155fd20-ac67-4fda-8e91-e2dd20877652.png)
+
 ## Sources
 
 https://api.jquery.com/
