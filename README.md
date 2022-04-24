@@ -16,7 +16,7 @@ JQUERY Documentation: https://api.jquery.com/
 
 Github Repo: https://github.com/jmproctor/code-quiz
 
-Deployed App: 
+Deployed App: https://jmproctor.github.io/code-quiz/
 
 ## Screenshots
 
