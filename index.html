@@ -16,7 +16,7 @@
     <h1>Coding Quiz</h1>
     <div class="start">
     <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by 10 seconds!</p>
-    <button id="beginBtn" type="button" class="btn">Begin Quiz</button><br>
+    <button id="startBtn" type="button" class="btn">Begin Quiz</button><br>
     </div>
 
     <main class="main">
@@ -31,24 +31,24 @@
             <hr style="margin-top:0; border-color:transparent;">
             <div id="multipleChoice" class="w3-container">
                 <div class="questionLine">
-                    <label id="mcA"></label>
+                    <label id="answerA"></label>
                 </div><hr>
 
                 <div class="questionLine">
-                    <label id="mcB"></label>
+                    <label id="answerB"></label>
                 </div><hr>
 
                 <div class="questionLine">
-                    <label id="mcC"></label>
+                    <label id="answerC"></label>
                 </div><hr>
 
                 <div class="questionLine">
-                    <label  id="mcD"></label>            
+                    <label  id="answerD"></label>            
                 </div>
             </div>
 
             <hr style="margin-top:0; border-color:transparent;">
-            <footer id="feedback1" class="w3-block w3-dark-grey">Can you answer all the questions in time?</footer>
+            <footer id="feedback" class="w3-block w3-dark-grey">Can you answer all the questions in time?</footer>
             </div>
         </div>
         <button id="leaderBtn" type="button" class="btn">View High Scores</button><br>
@@ -74,10 +74,10 @@
                 <hr style="margin-top:0; border-color:transparent;">
                 <div id="leaderBoard" class="w3-container" style="min-height: 275px"></div>
                 <hr style="margin-top:0; border-color:transparent;">
-                <footer id="feedback2" class="w3-block w3-dark-grey">Thanks for Playing!</footer>
+                <footer id="thanks" class="w3-block w3-dark-grey">Thanks for Playing!</footer>
             </div>
 
-            <button id="backBtn" type="button" class="btn">Restart</button>
+            <button id="restartBtn" type="button" class="btn">Restart</button>
             <button id="clearBtn" type="button" class="btn">Clear High Score</button>
         </div>
     </main>
