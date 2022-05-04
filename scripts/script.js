@@ -1,4 +1,3 @@
-// Global variables, questions are stored in questions.js
 var startQuiz = document.querySelector("#startBtn");
 var leaderBtn = document.querySelector("#leaderBtn");
 var restartBtn = document.querySelector("#restartBtn");
@@ -40,7 +39,7 @@ var answerB = document.querySelector("#answerB");
 var answerC = document.querySelector("#answerC");
 var answerD = document.querySelector("#answerD");
 
-function displayQA() {
+function displayQuestionsAnswers() {
     if (q < questionBank.length) {
         question.textContent = questionBank[q].question;
         answerA.textContent = questionBank[q].selection[0];
@@ -69,10 +68,10 @@ function compareAnswer(event) {
     }
     score = seconds;
     q++;
-    displayQA();
+    displayQuestionsAnswers();
 }}
 
-var inputForm = document.querySelector("#inputForm");
+var initialsForm = document.querySelector("#initialsForm");
 var scoreCard = document.querySelector("#scoreCard");
 var scoreBtn = document.querySelector("#scoreBtn");
 
@@ -134,16 +133,16 @@ function addToLeaderBoard() {
 
 // Removing player initials from leader board
 function removeFromLeaderBoard() {
-    var removeScores = document.getElementById("playerInitials");
-    if (removeScores !== null) {
-        removeScores.remove();
+    var clearScores = document.getElementById("playerInitials");
+    if (clearScores !== null) {
+        clearScores.remove();
     } else {
 }}
 
 // Event listeners
 startQuiz.addEventListener("click", function (event) {
     countdownTimer();
-    displayQA();
+    displayQuestionsAnswers();
     start.classList.add("hide");
     gameCard.classList.remove("hide");
     leaderBtn.style.display = "none";
@@ -157,9 +156,9 @@ card.addEventListener("click", function (event) {
 
 submitBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    var playerInitials = initialsBox.value.trim();
+    var Initials = initialsBox.value.trim();
     var newScore = {
-    player: playerInitials,
+    player: Initials,
     score: score,
     };
 

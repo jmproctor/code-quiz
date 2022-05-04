@@ -110,7 +110,7 @@
   /************************/
   
 .btn {
-    background: conic-gradient(from 45deg, red, orange, yellow, green, blue, purple);
+    background: conic-gradient(from 45deg, rgb(47, 0, 255), rgb(255, 238, 0), rgb(143, 0, 0), green, rgb(255, 255, 255), purple);
     border-color: #333;
     color: #ecf5ff;
     font-size: 1.5rem;
